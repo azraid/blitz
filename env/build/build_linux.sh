@@ -25,8 +25,8 @@ go build  -race --o $GOPATH/bin/blitz/linux_amd64/juliusersrv $GOPATH/src/github
 go build  -race --o $GOPATH/bin/blitz/linux_amd64/matchsrv $GOPATH/src/github.com/azraid/blitz/services/juli/matchsrv/main.go $GOPATH/src/github.com/azraid/blitz/services/juli/matchsrv/match.go $GOPATH/src/github.com/azraid/blitz/services/juli/matchsrv/txn.go 
 go build -o $GOPATH/bin/blitz/linux_amd64/juli $GOPATH/src/github.com/azraid/blitz/test/juli/main.go  $GOPATH/src/github.com/azraid/blitz/test/juli/conn.go $GOPATH/src/github.com/azraid/blitz/test/juli/dialer.go $GOPATH/src/github.com/azraid/blitz/test/juli/resq.go $GOPATH/src/github.com/azraid/blitz/test/juli/client.go $GOPATH/src/github.com/azraid/blitz/test/juli/biz_login.go  $GOPATH/src/github.com/azraid/blitz/test/juli/biz_juli.go  $GOPATH/src/github.com/azraid/blitz/test/juli/cmd.go 
 
-cp -rf $GOPATH/src/github.com/azraid/pasque/env/config/system_linux.json $GOPATH/bin/blitz/linux_amd64/config/system.json
-cp -rf $GOPATH/src/github.com/azraid/pasque/env/run/run_linux.sh $GOPATH/bin/blitz/linux_amd64/run.sh
-cp -rf $GOPATH/src/github.com/azraid/pasque/env/run/sampling.sh $GOPATH/bin/blitz/linux_amd64/sampling.sh
-cp -rf $GOPATH/src/github.com/azraid/pasque/env/run/sampling10.sh $GOPATH/bin/blitz/linux_amd64/sampling10.sh
-cp -rf $GOPATH/src/github.com/azraid/pasque/env/config/userauthdb.json $GOPATH/bin/blitz/linux_amd64/config/userauthdb.json
+cp -rf $GOPATH/src/github.com/azraid/blitz/env/config/system_linux.json $GOPATH/bin/blitz/linux_amd64/config/system.json
+cp -rf $GOPATH/src/github.com/azraid/blitz/env/run/run_linux.sh $GOPATH/bin/blitz/linux_amd64/run.sh
+cp -rf $GOPATH/src/github.com/azraid/blitz/env/run/sampling.sh $GOPATH/bin/blitz/linux_amd64/sampling.sh
+cp -rf $GOPATH/src/github.com/azraid/blitz/env/run/sampling10.sh $GOPATH/bin/blitz/linux_amd64/sampling10.sh
+cp -rf $GOPATH/src/github.com/azraid/blitz/env/config/userauthdb.json $GOPATH/bin/blitz/linux_amd64/config/userauthdb.json
